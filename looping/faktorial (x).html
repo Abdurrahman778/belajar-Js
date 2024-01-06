@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>latihan menghubungkan elemen HTML dengan JavaScript</h1>
+    
+    <!-- for loop -->
+    <p>mencari faktorial perkalian dengan for loop</p>
+    <input type="number" id="forLoop">
+    <button onclick="faktorialFor()">jalankan!</button>
+    <p>faktorial dari angka diatas adalah : <span id="demo"></span> </p>
+    <hr>
+    
+    <!-- while loop -->
+    <p>mencari faktorial perkalian dengan while loop</p>
+    <input type="number" id="whileLoop">
+    <button onclick="faktorialWhile()">jalankan!</button>
+    <p>faktorial dari angka diatas adalah : <span id="while"></span> </p>
+    <hr>
+
+    <!-- do while loop -->
+    <p>mencari faktorial perkalian dengan Do While Loop</p>
+    <input type="number" id="doLoop">
+    <button onclick="faktorialDo()">jalankan!</button>
+    <p>faktorial dari angka diatas adalah : <span id="do"></span> </p>
+    
+    <script>
+        // faktorial 
+        function faktorialFor() {
+        var inputNumber = document.getElementById("forLoop").value;
+        var total = 1;
+        
+        if (inputNumber === "") {
+            alert("isi bilangan terlebih dahulu!");
+            return;
+        }
+
+        for (i = 1; i <= inputNumber; ++i) {
+            total = total * i;
+        }
+
+        document.getElementById("demo").innerText = total;
+        }
+
+        // while loop
+
+        function faktorialWhile() {
+        var inputNumber = document.getElementById("whileLoop").value;
+        var total = 1;
+
+        if (inputNumber === "") {
+            alert("isi bilangan terlebih dahulu!");
+            return;
+        }
+        
+        i = 1;
+        while (i <= inputNumber) {
+            total *= i;
+            i++;
+        }
+
+        document.getElementById("while").innerText = total;
+        }
+
+        // do while loop 
+        function faktorialDo() {
+        var inputNumber = document.getElementById("doLoop").value;
+        var total = 1;
+
+        if (inputNumber === "") {
+            alert("isi bilangan terlebih dahulu!");
+            return;
+        }
+        
+        i = 1;
+        do {
+            total *= i;
+            i++
+        } while (i <= inputNumber)
+
+        document.getElementById("do").innerText = total;
+        }
+
+
+    </script>
+</body>
+</html>

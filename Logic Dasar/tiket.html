@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vip = 50
+        let ekonomi = 50
+        let eksekutif = 50
+
+        if (vip >= 35) {
+            console.log("VIP untung 25%")
+        } else if (vip >= 20 && vip <= 35) {
+            console.log ("VIP untung 15%")
+        } else if (vip <= 20) {
+            console.log ("VIP untung 5%")
+        }
+
+        if (eksekutif >= 40 ){
+            console.log ("Eksekutif untung 20%")
+        } else if (eksekutif >= 20 && eksekutif <= 40){
+            console.log("Eksekutif untung 10%")
+        } else if (eksekutif <= 20) {
+            console.log ("Eksekutif untung 2%")
+        }
+
+        if (ekonomi >= 0){
+            console.log ("Ekonomi untung 7%")
+        }
+    </script>
+</body>
+</html>

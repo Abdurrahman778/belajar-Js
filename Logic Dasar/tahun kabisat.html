@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perhitungan tahun kabisat</title>
+</head>
+<body>
+    <script>
+        
+        for (tahun = 1600; tahun <= 2024; tahun++) {
+            if (tahun % 400 == 0) {
+                document.write (`${tahun} ini merupakan tahun kabisat <br>`)
+            } else if (tahun % 100 == 0) {
+                document.write(`${tahun} ini bukanlah tahun kabisat <br>`) 
+            } else if (tahun % 4 == 0) {
+                document.write (`${tahun} ini merupakan tahun kabisat <br>`)
+            } else if (tahun % 100 == 0 && tahun % 400 == 0) {
+                document.write (`${tahun} ini bukanlah tahun kabisat <br>`)
+            }
+        }
+
+    </script>
+</body>
+</html>

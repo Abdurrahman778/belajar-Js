@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="angka"></p>
+
+    <script>
+        let text = "";
+        
+        for ( var i = 1; i <= 40; i++) {
+            text += i + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        var i = 1;
+
+        while ( i <= 40) {
+	    document.write( i);
+	    i++;
+        }
+        
+        
+        // for ( var i = 1; i <= 40; i++) {
+        //     text += i + "<br>";
+        // }
+        // document.getElementById("demo").innerHTML = text;
+
+        // angka = 1;
+        // while (angka <= 40) {
+        //     angka += i + "<br>"
+        //     angka++
+        // } document.getElementById("angka").innerHTML = angka;
+
+
+    </script>
+</body>
+</html>
