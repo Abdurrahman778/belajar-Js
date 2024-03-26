@@ -7,13 +7,19 @@
 </head>
 <body>
     <script>
-        let gajiPokok = 1500000;
+        let gaji = 1500000;
+        let anak = 3;
         let tunjangan = 500000;
-        let tunjanganAnak = 100000;
-
-        let jumlahAnak = 2;
-        
-        
+        let potongan = 8/100;
+         if (anak == 0 ) {
+            console.log(gaji + tunjangan * potongan)
+         }
+         else if (anak >=1 && anak <=2) {
+            console.log(gaji + tunjangan + anak*100000 * potongan) 
+         }
+         else {
+            console.log(gaji + tunjangan + 100000*2 * potongan)
+         }
     </script>
 </body>
 </html>
